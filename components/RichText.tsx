@@ -17,7 +17,11 @@ export const RichText = ({ jsonStringData }: RichTextProps) => {
     return null;
   }
   if (!data.time || !data.version || !data.blocks.length) {
-    console.error("Rich text data not in the EditorJS format. %s %s",data,jsonStringData);
+    console.error(
+      "Rich text data not in the EditorJS format. %s %s",
+      data,
+      jsonStringData
+    );
     return null;
   }
   return (
